@@ -1,6 +1,6 @@
 version: "3.3"
 networks:
-  factoryai_factoryai:
+  factoryai_genai_net:
     external: true
 services:
   text-generation-webui_text-generation-webui:
@@ -35,4 +35,4 @@ services:
               device_ids: ['0']
               capabilities: [gpu]
     networks:
-      - factoryai_factoryai
+      - factoryai_genai_net
